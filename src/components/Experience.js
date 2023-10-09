@@ -40,9 +40,8 @@ export default function Experience({ color }) {
   const options = ["All", "Work", "Internship", "School"];
   const [selected, setSelected] = useState("All");
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [largeScreen] = useMediaQuery('(min-width: 600px)');
-  const [smallScreen] = useMediaQuery('(max-width: 599px)');
-
+  const [largeScreen] = useMediaQuery("(min-width: 600px)");
+  const [smallScreen] = useMediaQuery("(max-width: 599px)");
 
   const [modal, setModal] = useState({});
 
@@ -51,8 +50,8 @@ export default function Experience({ color }) {
   };
 
   return (
-    <>
-      <Container maxW={"3xl"} id="experience">
+    <div id="experience" style={{ paddingTop: "80px" }}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -94,7 +93,12 @@ export default function Experience({ color }) {
                     <CardHeader>
                       <Flex justifyContent="space-between">
                         <HStack>
-                          <Image src={exp.image} h={50} w={50} borderRadius='6px' />
+                          <Image
+                            src={exp.image}
+                            h={50}
+                            w={50}
+                            borderRadius="6px"
+                          />
                           <Box px={2} align="left">
                             <HStack>
                               <Text fontWeight={600}>{exp.company}</Text>
@@ -111,24 +115,22 @@ export default function Experience({ color }) {
                               />
                             </HStack>
                             <Text>{exp.role}</Text>
-                            {smallScreen &&
+                            {smallScreen && (
                               <Text fontWeight={300} pt={1} fontStyle="italic">
                                 {exp.startDate} - {exp.endDate}
                               </Text>
-                            }
+                            )}
                           </Box>
                         </HStack>
-                        {largeScreen &&
+                        {largeScreen && (
                           <Text px={2} fontWeight={300}>
                             {exp.startDate} - {exp.endDate}
                           </Text>
-                        }
+                        )}
                       </Flex>
-
                     </CardHeader>
                     <CardBody>
                       <Flex>
-
                         <List align="left" spacing={3}>
                           {exp.points.map((item, index) => (
                             <ListItem key={index}>
@@ -190,6 +192,6 @@ export default function Experience({ color }) {
           </Stack>
         </Stack>
       </Container>
-    </>
+    </div>
   );
 }

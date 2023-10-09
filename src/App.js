@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
@@ -16,6 +16,52 @@ function App() {
   // edit this variable to change the color theme
   const color = "teal";
 
+  const [currentAnchor, setCurrentAnchor] = useState("");
+
+  useEffect(() => {
+    let currentAnchor = "";
+  
+    const handleScroll = () => {
+      const aboutOffset = document.getElementById("about").offsetTop - 200;
+      const experienceOffset = document.getElementById("experience").offsetTop - 200;
+      const projectsOffset = document.getElementById("projects").offsetTop - 200;
+      const skillsOffset = document.getElementById("skills").offsetTop - 200;
+      const contactOffset = document.getElementById("contact").offsetTop - 200;
+  
+      const scrollPosition = window.scrollY;
+  
+      if (scrollPosition < aboutOffset) {
+        currentAnchor = "header";
+      } else if (scrollPosition < experienceOffset) {
+        currentAnchor = "about";
+      } else if (scrollPosition < projectsOffset) {
+        currentAnchor = "experience";
+      } else if (scrollPosition < skillsOffset) {
+        currentAnchor = "projects";
+      } else if (scrollPosition < contactOffset) {
+        currentAnchor = "skills";
+      } else {
+        currentAnchor = "contact";
+      }
+  
+      // Cambia l'ancora nell'URL solo se è cambiata
+      if (currentAnchor !== window.location.hash.substr(1)) {
+        window.history.replaceState({}, "", `#${currentAnchor}`);
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Cambia l'ancora nell'URL quando l'ancora corrente cambia
+    window.history.replaceState({}, "", `#${currentAnchor}`);
+  }, [currentAnchor]);
+
   return (
     <>
       <Nav color={color} />
@@ -29,5 +75,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

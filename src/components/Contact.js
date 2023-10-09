@@ -60,8 +60,8 @@ export default function Contact({ color }) {
     window.open(`mailto:${profile.email}`, "_blank", "noreferrer,noopener");
   };
   return (
-    <>
-      <Container maxW={"3xl"} id="contact">
+    <div id="contact" style={{ paddingTop: "80px" }}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -132,7 +132,7 @@ export default function Contact({ color }) {
                 variant="contained"
                 sx={{
                   width: "100%",
-                  my: 2,
+                  mt: 2,
                   backgroundColor: "#048a93",
                   "&:hover": {
                     backgroundColor: "#0d9d90",
@@ -157,6 +157,6 @@ export default function Contact({ color }) {
           </Stack>
         </Stack>
       </Container>
-    </>
+    </div>
   );
 }

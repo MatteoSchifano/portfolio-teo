@@ -8,7 +8,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-  Center
+  Center,
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 import { Image } from "@chakra-ui/react";
@@ -31,7 +31,7 @@ export default function Header({ color }) {
         />
       </Heading>
 
-      <Container maxW={"3xl"} id="hero">
+      <Container maxW={"3xl"} id="header">
         <Stack
           as={Box}
           textAlign={"center"}
@@ -42,7 +42,7 @@ export default function Header({ color }) {
           {/* add image here */}
           <Center>
             <Image
-             borderRadius='full'
+              borderRadius="full"
               height={"250px"}
               width={"250px"}
               objectFit="cover"
@@ -58,14 +58,16 @@ export default function Header({ color }) {
           >
             Hi, my name is Matteo Schifano <br />
             <Text as={"span"} color={`${color}.400`}>
-            I'm a Junior Software Engineer
+              I'm a Junior Software Engineer
             </Text>
           </Heading>
           <Text
             color={"gray.500"}
             fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
-          >I deliver Python-powered AI solutions with a sprinkle of magic! 🐍✨ Let's make your tech dreams come true together.
-            </Text>
+          >
+            I deliver Python-powered AI solutions with a sprinkle of magic! 🐍✨
+            Let's make your tech dreams come true together.
+          </Text>
           <Stack
             direction={"column"}
             align={"center"}

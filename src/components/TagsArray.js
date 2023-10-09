@@ -8,7 +8,7 @@ const parseTags = (mdContent) => {
     const value = lines[i];
 
     tags.push({
-      value
+      value,
     });
   }
   return tags;

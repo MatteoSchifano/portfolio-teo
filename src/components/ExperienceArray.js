@@ -1,13 +1,12 @@
-
-
 const ExperienceArray = () => {
   const experiences = [
     {
       company: "Coderit",
       role: "Full-Stack Developer",
       startDate: "Gen 2023",
-      endDate:"Jul 2023",
-      description: "Coderit design, develop, and maintain high-quality software that enhances your company's performance, and we train your IT staff to effectively support it.",
+      endDate: "Jul 2023",
+      description:
+        "Coderit design, develop, and maintain high-quality software that enhances your company's performance, and we train your IT staff to effectively support it.",
       image: "/assets/coderitLogo.jpg",
       website: "https://www.coderit.it/",
       tags: "Internship",
@@ -81,8 +80,6 @@ const ExperienceArray = () => {
         },
       ],
     },
-   
-   
   ];
 
   return experiences;

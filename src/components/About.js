@@ -13,8 +13,8 @@ import { BsDownload } from "react-icons/bs";
 
 export default function About({ color }) {
   return (
-    <>
-      <Container maxW={"3xl"} id="about">
+    <div id="about" style={{ paddingTop: '80px' }}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -41,9 +41,9 @@ export default function About({ color }) {
                 </Button>
               </Link>
             </Box>
-          </Center>s
+          </Center>
         </Stack>
       </Container>
-    </>
+    </div>
   );
 }

@@ -18,7 +18,7 @@ import { Fade } from "react-reveal";
 import { useState } from "react";
 import ProjectsArray from "./ProjectsArray";
 import { BsGlobe2 } from "react-icons/bs";
-import {FaGithub} from "react-icons/fa"
+import { FaGithub } from "react-icons/fa";
 
 export default function Projects({ color }) {
   const projects = ProjectsArray();
@@ -32,8 +32,8 @@ export default function Projects({ color }) {
   };
 
   return (
-    <>
-      <Container maxW={"3xl"} id="projects">
+    <div id="projects" style={{ paddingTop: "80px" }}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -174,6 +174,6 @@ export default function Projects({ color }) {
           </SimpleGrid> */}
         </Stack>
       </Container>
-    </>
+    </div>
   );
 }
