@@ -8,6 +8,9 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Skills from './components/Skills'
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-DLQP6VE1W0"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   // Available Colours:

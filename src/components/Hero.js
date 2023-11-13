@@ -58,7 +58,7 @@ export default function Header({ color }) {
           >
             Hi, my name is Matteo Schifano <br />
             <Text as={"span"} color={`${color}.400`}>
-              I'm a Junior Software Engineer
+              I'm a Junior Full-Stack Developer
             </Text>
           </Heading>
           <Text
