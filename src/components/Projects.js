@@ -86,7 +86,7 @@ export default function Projects({ color }) {
                         <Text py={2}>{project.description}</Text>
 
                         <HStack py={2}>
-                          <a href={project.link} target="_blank">
+                          <a href={project.link} target="_blank" rel="noreferrer">
                             <Button
                               leftIcon={<BsGlobe2 />}
                               color={`${color}.400`}

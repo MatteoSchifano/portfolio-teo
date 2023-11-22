@@ -176,7 +176,7 @@ export default function Experience({ color }) {
                         <Flex pb={2}>{modal.description}</Flex>
                       </ModalBody>
                       <ModalFooter>
-                        <a href={modal.website} target="_blank">
+                        <a href={modal.website} target="_blank" rel="noreferrer">
                           <Button
                             leftIcon={<BsGlobe2 />}
                             color={`${color}.400`}
