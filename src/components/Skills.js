@@ -143,16 +143,6 @@ export default function Skills({ color }) {
                 </Box>
               ))}
             </Wrap>
-
-            {/* <Text fontWeight={600}>Mobile Development</Text>
-            <Wrap spacing={4} >
-              {mobileTechnologies.map((technology) => (
-                <Box key={technology.name} align="center">
-                  <Image src={technology.logoUrl} alt={technology.name} boxSize="40px" />
-                  <Text color={"gray.500"}>{technology.name}</Text>
-                </Box>
-              ))}
-            </Wrap> */}
             <Text fontWeight={600}>Back End Development</Text>
             <Wrap spacing={4}>
               {backendTechnologies.map((technology) => (

@@ -66,7 +66,7 @@ function App() {
   }, [currentAnchor]);
 
   return (
-    <>
+    <main>
       <Nav color={color} />
       <Header color={color} />
       <About color={color} />
@@ -75,7 +75,7 @@ function App() {
       <Skills color={color} />
       <Contact color={color} />
       <Footer />
-    </>
+    </main>
   );
 }
 
