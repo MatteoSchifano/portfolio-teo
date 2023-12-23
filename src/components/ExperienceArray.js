@@ -1,29 +1,28 @@
 const ExperienceArray = () => {
   const experiences = [
     {
-      company: "Coderit",
-      role: "Full-Stack Developer",
-      startDate: "Gen 2023",
-      endDate: "Jul 2023",
+      company: "Reddoak",
+      role: "Developer",
+      startDate: "Dec 2023",
+      endDate: "Present",
       description:
-        "Coderit design, develop, and maintain high-quality software that enhances your company's performance, and we train your IT staff to effectively support it.",
-      image: "/assets/coderitLogo.jpg",
-      website: "https://www.coderit.it/",
-      tags: "Internship",
+        "Reddoak is among the best Italian app development companies.The company's values are the values of the people who work there, which is why we choose only the best talent. People who bring ideas and positivity to the company, regardless of role and skills!",
+      image: "/assets/reddoak_logo.jpg",
+      website: "https://reddoak.com/",
+      tags: "Work",
       points: [
-        "My role involved full-stack development, where I crafted user-friendly interfaces (front-end) and designed robust database systems (back-end) for websites.",
-        "My responsibilities included overseeing the entire web development process, from front-end UI/UX design to back-end server scripting, ensuring optimal performance and functionality.",
+        "My current focus revolves around front-end development in React, where I specialize in crafting user-friendly interfaces. I ensure seamless integration with back-end systems, streamlining the entire web development process for optimal performance and functionality.",
       ],
       badges: [
         {
           id: 1,
-          name: "Internship",
+          name: "CONTRACTED",
           color: "blue",
         },
         {
           id: 2,
-          name: "Completed",
-          color: "green",
+          name: "Ongoing",
+          color: "orange",
         },
       ],
     },
@@ -53,6 +52,33 @@ const ExperienceArray = () => {
           id: 2,
           name: "Ongoing",
           color: "orange",
+        },
+      ],
+    },
+    {
+      company: "Coderit",
+      role: "Full-Stack Developer",
+      startDate: "Gen 2023",
+      endDate: "Jul 2023",
+      description:
+        "Coderit design, develop, and maintain high-quality software that enhances your company's performance, and we train your IT staff to effectively support it.",
+      image: "/assets/coderitLogo.jpg",
+      website: "https://www.coderit.it/",
+      tags: "Internship",
+      points: [
+        "My role involved full-stack development, where I crafted user-friendly interfaces (front-end) and designed robust database systems (back-end) for websites.",
+        "My responsibilities included overseeing the entire web development process, from front-end UI/UX design to back-end server scripting, ensuring optimal performance and functionality.",
+      ],
+      badges: [
+        {
+          id: 1,
+          name: "Internship",
+          color: "blue",
+        },
+        {
+          id: 2,
+          name: "Completed",
+          color: "green",
         },
       ],
     },
