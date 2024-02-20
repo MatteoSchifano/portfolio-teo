@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://matteovincenzoschifano.web.app/sitemap.xml
