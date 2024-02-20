@@ -17,6 +17,9 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import ProfileArray from "./ProfileArray";
+
+import logo from "../assets/img/fato1.png";
+
 const TbIcons = require("react-icons/tb");
 
 export default function Nav({ color }) {
@@ -82,7 +85,7 @@ export default function Nav({ color }) {
       <Flex
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
-        h={16}
+        h={24}
         boxShadow={scroll ? "base" : "none"}
         zIndex="sticky"
         position="fixed"
@@ -92,11 +95,12 @@ export default function Nav({ color }) {
         w="100%"
       >
         <Link onClick={scrollToHero} as="a" href="#header">
-          <HStack>
+          {/* <HStack>
             {TbLetterComponents.map((Component, index) => (
               <Component key={index} color={colors[color]} />
             ))}
-          </HStack>
+          </HStack> */}
+          <img src={logo} alt="logo" style={{ height: "75px" }} />
         </Link>
 
         <Flex alignItems={"center"}>

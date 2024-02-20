@@ -31,7 +31,7 @@ export default function Header({ color }) {
         />
       </Heading>
 
-      <Container maxW={"3xl"} id="header">
+      <Container maxW={"3xl"} id="header" sx={{pt:10}}>
         <Stack
           as={Box}
           textAlign={"center"}
